@@ -1,13 +1,10 @@
 from urllib.parse import urlparse, urlunparse
 
 url_url = "http://www.user.by:50/test.php;st?var=10#metka"
-port_num = input("Введите номер порта:")
 
 url = urlparse(url_url)
 
 tup_url = tuple(url)
-
-
 
 print("Протокол: ",url.scheme)
 print("Домен: ",url.hostname)
